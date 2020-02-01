@@ -15,7 +15,7 @@
     if ($x % 3 == 0) {
       echo $x;
       echo "<br>";
-  }
+    }
     $x++;
   }
   echo "<br>";

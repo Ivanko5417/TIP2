@@ -19,11 +19,13 @@ function showImage() {
 
     $count = $row["clickCount"];
     $imgName = $row["imgName"];
+    $title = $row["title"];
+    $alt = $row["alt"];
     echo "<a href=\"edit.php?id=$id\">Редактировать</a>";
     echo "<br/>";
     echo "Количество переходов: " . $count;
     echo "<br/>";
-    echo '<img src="img/'.$imgName.'"/>';
+    echo "<img src='img/$imgName' title='$title' alt='$alt'/>";
     return true;
 }
 
